@@ -75,6 +75,7 @@ var go = function() {
 	console.log('play!', player)
 	player.on('ready', function() {
 		window.setTimeout(function() {
+			player.unmute()
 			player.play()
 			playing = true;
 		}, (prepTime + 1) * 1000)
