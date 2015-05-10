@@ -1,0 +1,79 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
+	<script type="text/javascript" src="//cdn.embed.ly/player-0.0.10.min.js"></script>
+	<script src="./reaction.js" type="application/javascript"></script>
+	<link rel="stylesheet" href="//assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
+	<script src="//assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+	<script>ZiggeoApi.token = "98c2a504cfe8f06e7b7d43c02b046436";</script>
+	<script>
+	  (function(w, d){
+	   var id='embedly-platform', n = 'script';
+	   if (!d.getElementById(id)){
+	     w.embedly = w.embedly || function() {(w.embedly.q = w.embedly.q || []).push(arguments);};
+	     var e = d.createElement(n); e.id = id; e.async=1;
+	     e.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.embedly.com/widgets/platform.js';
+	     var s = d.getElementsByTagName(n)[0];
+	     s.parentNode.insertBefore(e, s);
+	   }
+	  })(window, document);
+	</script>
+</head>
+<body>
+	<div class="row">
+		<div class="small-12 text-center columns">
+			<h1>The Reactory</h1>
+		</div>
+		<div class="small-12 text-center columns">
+			<h4>Capture your reactions to fun videos</h4>
+		</div>
+	</div>
+	<form>
+		<div class="row">
+			<div class="small-8 columns">
+				<label>URL
+					<input id="url" type="text" />
+				</label>
+			</div>
+			<div class="small-1 columns">
+				<label>Start at
+					<input id="start" type="text" />
+				</label>
+			</div>
+			<div class="small-1 columns">
+				<label>Play for
+					<input id="playtime" type="text" />
+				</label>
+			</div>
+			<div class="small-1 columns">
+				<label>Reaction
+					<input id="reaction-time" type="text" />
+				</label>
+			</div>
+			<div class="small-1 columns">
+				<a id="new-url-go" class="button secondary">Go!</a>
+			</div>
+		</div>
+	</form>
+	<div class="row">
+		<div class="small-9 columns" id="video-embed">
+			<a href="https://www.youtube.com/watch?v=_TyIA0rKTWo" class="embedly-card"></a>
+		</div>
+
+		<div class="small-3 columns">
+			<div id="recorder"></div>
+			<label>Reaction URL
+			<input id="ziggeo-url" type="text" />
+			</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-3 small-centered columns">
+			<a id="go" class="button">Action!</a>
+		</div>
+	</div>
+</body>
+</html>

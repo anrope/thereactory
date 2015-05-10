@@ -1,0 +1,4 @@
+http://localhost:8000/reaction.html?url=https%3A%2F%2Finstagram.com%2Fp%2FnDrihRt7GR&start=0&playtime=13&reaction_time=3
+http://localhost:8000/reaction.html?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_TyIA0rKTWo&start=220&playtime=9&reaction_time=2
+http://localhost:8000/reaction.html?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLTtL-HlEKK0&start=242&playtime=15&reaction_time=3
+http://localhost:8000/reaction.html?url=https%3A%2F%2Fvimeo.com%2F51403301&start=225&playtime=14&reaction_time=3
